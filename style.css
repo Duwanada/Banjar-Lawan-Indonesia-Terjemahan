@@ -1,0 +1,1034 @@
+/* ===================================================
+   BANJAR LAWAN INDONESIA
+   STYLE.CSS
+=================================================== */
+
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#eef7ec;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+/* ================= HEADER ================= */
+
+.header{
+
+    background:linear-gradient(135deg,#1f7a3f,#39a85d);
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+
+}
+
+.header h1{
+
+    font-size:45px;
+
+    margin-bottom:10px;
+
+}
+
+.header p{
+
+    font-size:20px;
+
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+
+}
+
+.navbar .container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:18px;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#1f7a3f;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#f2b705;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    background:linear-gradient(rgba(31,122,63,.85),
+    rgba(31,122,63,.85));
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.hero h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:20px;
+
+}
+
+.hero button{
+
+    margin-top:30px;
+
+}
+
+/* ================= SECTION ================= */
+
+section{
+
+    margin-top:60px;
+
+}
+
+.judul{
+
+    text-align:center;
+
+    color:#1f7a3f;
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+.subjudul{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+
+}
+
+/* ================= SEARCH ================= */
+
+.search-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.search-box input{
+
+    width:65%;
+
+    min-width:260px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #ccc;
+
+    font-size:17px;
+
+    outline:none;
+
+}
+
+.search-box input:focus{
+
+    border:2px solid #1f7a3f;
+
+}
+
+/* ================= BUTTON ================= */
+
+button{
+
+    background:#f2b705;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#d89d00;
+
+    transform:scale(1.05);
+
+}/* ===================================================
+   KATEGORI
+=================================================== */
+
+.kategori{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin:35px 0;
+
+}
+
+.card{
+
+    background:white;
+
+    width:220px;
+
+    padding:30px 20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:#1f7a3f;
+
+    color:white;
+
+}
+
+.icon{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+}
+
+.card h3{
+
+    font-size:22px;
+
+}
+
+
+
+/* ===================================================
+   HASIL TERJEMAHAN
+=================================================== */
+
+.hasil{
+
+    background:white;
+
+    margin-top:35px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.hasil h3{
+
+    color:#1f7a3f;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* ===================================================
+   BOX HASIL
+=================================================== */
+
+.hasil-box{
+
+    display:flex;
+
+    gap:35px;
+
+    align-items:flex-start;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/* ===================================================
+   GAMBAR
+=================================================== */
+
+.hasil-box img{
+
+    width:280px;
+
+    border-radius:20px;
+
+    border:5px solid #1f7a3f;
+
+    object-fit:cover;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+
+}
+
+
+
+/* ===================================================
+   INFORMASI
+=================================================== */
+
+.info{
+
+    flex:1;
+
+}
+
+.info h2{
+
+    color:#1f7a3f;
+
+    margin-bottom:20px;
+
+}
+
+.info p{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ===================================================
+   AUDIO
+=================================================== */
+
+audio{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+
+
+/* ===================================================
+   CERITA
+=================================================== */
+
+.story-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.story-card h3{
+
+    color:#1f7a3f;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.story-card h4{
+
+    margin-top:15px;
+
+    color:#444;
+
+}
+
+.story-card p{
+
+    margin-top:10px;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+.story-card hr{
+
+    margin:15px 0;
+
+    border:1px solid #ddd;
+
+}/* ===================================================
+   GAME
+=================================================== */
+
+.game-box{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.progress{
+
+    background:#eef7ec;
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+    color:#1f7a3f;
+
+}
+
+.gambar-game img{
+
+    width:280px;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:5px solid #1f7a3f;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    margin-bottom:25px;
+
+}
+
+#pertanyaan{
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+#pilihan{
+
+    max-width:400px;
+
+    margin:25px auto;
+
+    text-align:left;
+
+}
+
+#pilihan label{
+
+    display:block;
+
+    background:#eef7ec;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:18px;
+
+}
+
+#pilihan label:hover{
+
+    background:#d8f2d2;
+
+    transform:translateX(5px);
+
+}
+
+#pilihan input{
+
+    margin-right:10px;
+
+}
+
+.game-button{
+
+    margin-top:20px;
+
+}
+
+#pesan{
+
+    margin-top:25px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.score-box{
+
+    margin-top:25px;
+
+    display:inline-block;
+
+    background:#1f7a3f;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+/* ===================================================
+   TENTANG
+=================================================== */
+
+.about-box{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ===================================================
+   FOOTER
+=================================================== */
+
+.footer{
+
+    background:#1f7a3f;
+
+    color:white;
+
+    text-align:center;
+
+    margin-top:70px;
+
+    padding:40px 20px;
+
+}
+
+.footer h3{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.footer p{
+
+    margin:6px 0;
+
+}
+
+/* ===================================================
+   ANIMASI
+=================================================== */
+
+.card,
+button,
+.story-card,
+.game-box,
+.hasil{
+
+    transition:0.3s;
+
+}
+
+button:active{
+
+    transform:scale(.96);
+
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:768px){
+
+    .header h1{
+
+        font-size:34px;
+
+    }
+
+    .hero h2{
+
+        font-size:30px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    .search-box{
+
+        flex-direction:column;
+
+    }
+
+    .search-box input{
+
+        width:100%;
+
+    }
+
+    .hasil-box{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hasil-box img{
+
+        width:220px;
+
+    }
+
+    .gambar-game img{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+    .navbar .container{
+
+        flex-wrap:wrap;
+
+        gap:15px;
+
+    }
+
+    .judul{
+
+        font-size:28px;
+
+    }
+
+    .card{
+
+        width:100%;
+
+    }
+
+    #pilihan{
+
+        width:100%;
+
+    }
+
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:768px){
+
+    
+
+}
+
+
+/* ===================================================
+   TAMBAHAN SCRIPT.JS BAGIAN 4
+   FEEDBACK GAME & ANIMASI
+=================================================== */
+
+
+.benar{
+
+    background:#d8f8d8;
+
+    color:#1f7a3f;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    animation:pop .5s;
+
+}
+
+
+
+.salah{
+
+    background:#ffdada;
+
+    color:#b30000;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    animation:shake .5s;
+
+}
+
+
+
+@keyframes pop{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+@keyframes shake{
+
+    0%,100%{
+
+        transform:translateX(0);
+
+    }
+
+
+    25%{
+
+        transform:translateX(-10px);
+
+    }
+
+
+    75%{
+
+        transform:translateX(10px);
+
+    }
+
+}
+
+
+/* ===============================
+   ANIMASI HASIL PENCARIAN
+================================ */
+
+
+.muncul{
+
+    animation:muncul .5s ease;
+
+}
+
+
+
+@keyframes muncul{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===============================
+   TOMBOL NEXT GAME
+================================ */
+
+
+.btn-next{
+
+    background:#1f7a3f;
+
+    color:white;
+
+    margin-left:10px;
+
+}
+
+
+
+.btn-next:hover{
+
+    background:#155c2f;
+
+}
+
+/* ===============================
+   ANIMASI HASIL
+================================ */
+
+.muncul{
+
+    animation:muncul .5s ease;
+
+}
+
+
+@keyframes muncul{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ===============================
+   FEEDBACK GAME
+================================ */
+
+
+.benar{
+
+    animation:benar .5s ease;
+
+}
+
+
+.salah{
+
+    animation:salah .5s ease;
+
+}
+
+
+
+@keyframes benar{
+
+    0%{
+
+        transform:scale(.8);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+@keyframes salah{
+
+    0%{
+
+        transform:translateX(-10px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ===================================================
+   SELESAI
+=================================================== */

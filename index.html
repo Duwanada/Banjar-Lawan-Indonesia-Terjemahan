@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banjar Lawan Indonesia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <h1>🌿 Banjar Lawan Indonesia</h1>
+
+            <p>
+                Media Pembelajaran Interaktif Bahasa Banjar
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="container">
+
+            <a href="#kamus">📖 Kamus</a>
+
+            <a href="#game">🎮 Game</a>
+
+            <a href="#cerita">📚 Cerita</a>
+
+            <a href="#tentang">ℹ Tentang</a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h2>
+
+                Selamat Datang 👋
+
+            </h2>
+
+            <p>
+
+                Belajar Bahasa Banjar menjadi lebih mudah melalui
+                gambar, audio, permainan, dan cerita pendek.
+
+            </p>
+
+            <button onclick="document.getElementById('kamus').scrollIntoView({behavior:'smooth'})">
+
+                🚀 Mulai Belajar
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <main class="container">
+
+        <!-- ================= KAMUS ================= -->
+
+        <section id="kamus">
+
+            <h2 class="judul">
+
+                📖 Kamus Bahasa Banjar
+
+            </h2>
+
+            <p class="subjudul">
+
+                Ketik kosakata Bahasa Banjar yang ingin dipelajari.
+
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="kataInput"
+                    placeholder="Contoh: mata">
+
+                <button onclick="cariKata()">
+
+                    Cari
+
+                </button>
+
+            </div>
+
+            <!-- ======= KATEGORI ======= -->
+
+            <div class="kategori">
+
+                <div
+                    class="card"
+                    onclick="tampilKategori('Anggota Tubuh')">
+
+                    <div class="icon">
+
+                        👦
+
+                    </div>
+
+                    <h3>
+
+                        Anggota Tubuh
+
+                    </h3>
+
+                </div>
+
+                <div
+                    class="card"
+                    onclick="tampilKategori('Benda di Sekitarku')">
+
+                    <div class="icon">
+
+                        🏠
+
+                    </div>
+
+                    <h3>
+
+                        Benda di Sekitarku
+
+                    </h3>
+
+                </div>
+
+                <div
+                    class="card"
+                    onclick="tampilKategori('Hubungan Keluarga')">
+
+                    <div class="icon">
+
+                        👨‍👩‍👧
+
+                    </div>
+
+                    <h3>
+
+                        Hubungan Keluarga
+
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <!-- ======= HASIL ======= -->
+
+            <div class="hasil">
+
+                <h3>
+
+                    Hasil Terjemahan
+
+                </h3>
+
+                <div id="hasil">
+
+                    <p>
+
+                        🌿 Silakan cari kosakata Bahasa Banjar.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>        <!-- ================= GAME ================= -->
+
+        <section id="game">
+
+            <h2 class="judul">
+
+                🎮 Permainan Tebak Gambar
+
+            </h2>
+
+            <p class="subjudul">
+
+                Pilih jawaban Bahasa Banjar yang sesuai dengan gambar.
+
+            </p>
+
+            <div class="game-box">
+
+                <div class="progress">
+
+                    <span id="nomorSoal">
+
+                        Soal 1 dari 5
+
+                    </span>
+
+                </div>
+
+                <div class="gambar-game">
+
+                    <img
+                        id="gambarGame"
+                        src="gambar/Games.png"
+                        alt="Gambar Tebak">
+
+                </div>
+
+                <h3 id="pertanyaan">
+
+                    Apa Bahasa Banjar dari gambar di atas?
+
+                </h3>
+
+                <div id="pilihan">
+
+                    <!-- Pilihan jawaban akan dibuat oleh JavaScript -->
+
+                </div>
+
+                <div class="game-button">
+
+                    <button
+                        class="btn-jawab"
+                        onclick="cekJawaban()">
+
+                        ✅ Jawab
+
+                    </button>
+
+                    <button
+                        class="btn-lanjut"
+                        onclick="lanjutSoal()">
+
+                        ➡️ Soal Berikutnya
+
+                    </button>
+
+                </div>
+
+                <p id="pesan"></p>
+
+                <div class="score-box">
+
+                    🏆 Skor :
+                    <span id="skor">
+
+                        0
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CERITA ================= -->
+
+        <section id="cerita">
+
+            <h2 class="judul">
+
+                📚 Cerita Pendek Bahasa Banjar
+
+            </h2>
+
+            <p class="subjudul">
+
+                Belajar Bahasa Banjar melalui cerita sederhana.
+
+            </p>
+
+            <div class="story-card">
+
+                <h3>
+
+                    👦 Andi Tulak Ka Pasar
+
+                </h3>
+
+                <hr>
+
+                <h4>
+
+                    Bahasa Banjar
+
+                </h4>
+
+                <p>
+
+                    Andi tulak ka pasar lawan uma.
+                    Andi mambali pisang wan guring.
+                    Andi handak bulik hanyar hujan turun.
+
+                </p>
+
+                <br>
+
+                <h4>
+
+                    Bahasa Indonesia
+
+                </h4>
+
+                <p>
+
+                    Andi pergi ke pasar bersama ibu.
+                    Andi membeli pisang dan kue.
+                    Ketika hendak pulang, hujan turun.
+
+                </p>
+
+                <br>
+
+                <button onclick="playAudio('audio/cerita.mp3')">
+
+                    🔊 Dengarkan Cerita
+
+                </button>
+
+            </div>
+
+        </section>        <!-- ================= TENTANG ================= -->
+
+        <section id="tentang">
+
+            <h2 class="judul">
+
+                ℹ️ Tentang Website
+
+            </h2>
+
+            <p class="subjudul">
+
+                Mengenal media pembelajaran Bahasa Banjar.
+
+            </p>
+
+            <div class="about-box">
+
+                <p>
+
+                    <strong>Banjar Lawan Indonesia</strong> merupakan media
+                    pembelajaran interaktif yang dirancang untuk membantu
+                    siswa mengenal Bahasa Banjar melalui kamus bergambar,
+                    audio pengucapan, permainan edukatif, dan cerita pendek.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    Website ini dibuat sebagai media pembelajaran digital
+                    untuk mendukung pelestarian Bahasa Banjar sehingga
+                    lebih mudah dipelajari oleh siswa sekolah dasar.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <h3>
+
+                🌿 Banjar Lawan Indonesia
+
+            </h3>
+
+            <p>
+
+                Media Pembelajaran Interaktif Bahasa Banjar
+
+            </p>
+
+            <br>
+
+            <p>
+
+                Dibuat oleh <strong>Nadratun Najah</strong>
+
+            </p>
+
+            <p>
+
+                PPG Prajabatan PGSD • 2026
+
+            </p>
+
+            <br>
+
+            <p>
+
+                © 2026 Banjar Lawan Indonesia. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="words.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
